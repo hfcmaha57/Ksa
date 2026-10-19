@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>درع الوطن | رسائل وطن لدرعه الحصين</title>
+<style>
+:root{--bg:#061b13;--panel:#10251b;--panel2:#0a1b14;--green:#075538;--gold:#e5c36b;--gold2:#f8e8ac;--muted:#b7c7bd;--line:#294638}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 15%,#0c5639 0,#061b13 54%);color:#f7f5e9;font-family:Tahoma,Arial,sans-serif;line-height:1.8}
+button,input,textarea,select{font:inherit}button{cursor:pointer}.topbar{position:sticky;top:0;z-index:5;background:#075538ed;border-bottom:1px solid #c7a84f;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px}.topbar button,.topbar a{border:1px solid #d9bd69;color:#fff4ce;background:#0c3c2a;border-radius:22px;padding:7px 14px;text-decoration:none;font-size:13px}.topbar .goldbtn{background:linear-gradient(120deg,#f2d987,#c99e3d);color:#33240a;font-weight:bold}
+.hero{padding:36px 18px 30px;text-align:center;background:linear-gradient(#063e2db0,#063e2d99),radial-gradient(circle at 50% 20%,#36724d,#092c20 60%);border-bottom-left-radius:35px;border-bottom-right-radius:35px;border-bottom:1px solid #a78c43;position:relative;overflow:hidden}.hero:after{content:"✦     ✧       ✦      ✧      ✦";position:absolute;inset:10px 0 auto;color:#f3d981;opacity:.55;font-size:24px;letter-spacing:28px;pointer-events:none}.crest{font-size:50px;filter:drop-shadow(0 0 10px #d6b452)}.eyebrow{color:var(--gold2);font-size:14px}.hero h1{font-size:clamp(40px,8vw,70px);line-height:1.2;margin:4px 0;color:var(--gold);text-shadow:0 4px 20px #0008}.hero .subtitle{font-size:clamp(17px,4vw,26px);margin:4px}.hero .leaders{max-width:700px;margin:20px auto 0;color:#f4e8bf}.container{max-width:940px;margin:auto;padding:20px 14px 50px}.panel{background:linear-gradient(140deg,#12291e,#0b1d15);border:1px solid var(--line);border-radius:28px;padding:22px;margin:20px 0;box-shadow:0 12px 30px #0003}.panel h2{color:var(--gold);margin:0 0 12px;font-size:25px}.muted{color:var(--muted)}.namebox label,.field label{display:block;font-weight:bold;color:#e7e7d8;margin:10px 0 6px}.namebox input,.field input,.field textarea,.field select{width:100%;background:#071710;color:#fff;border:1px solid #30483a;border-radius:15px;padding:13px;outline:none}.field textarea{min-height:125px;resize:vertical}.namebox input:focus,.field input:focus,.field textarea:focus{border-color:var(--gold)}
+.shield-panel{background:radial-gradient(ellipse at 50% 40%,#0c5c3d,#062b1e);border:1px solid #9d894a;border-radius:30px;padding:24px 14px;text-align:center}.shield{width:min(94%,520px);margin:0 auto 14px;padding:12px;background:linear-gradient(120deg,#fff0a7,#b88b2c,#f7df8a);clip-path:polygon(50% 0,96% 17%,94% 65%,80% 84%,50% 100%,20% 84%,6% 65%,4% 17%);filter:drop-shadow(0 0 18px #cba74e55)}.shield-inner{min-height:340px;background:#075035;clip-path:polygon(50% 0,96% 17%,94% 65%,80% 84%,50% 100%,20% 84%,6% 65%,4% 17%);padding:35px 24px 50px;background-image:linear-gradient(#075035e8,#075035e8),repeating-linear-gradient(60deg,transparent 0 18px,#bba45a 19px 21px)}.hexes{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;max-width:420px;margin:auto}.hex{aspect-ratio:1;background:linear-gradient(140deg,#fff1b1,#d5ad4c);color:#4b3710;clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%);display:flex;align-items:center;justify-content:center;font-size:clamp(8px,1.8vw,12px);overflow:hidden;padding:2px}.hex.empty{background:#0d6746;outline:1px solid #2e815e}.shield-caption{color:var(--gold2);font-size:23px;font-weight:bold;margin:10px 0}.progressbox{max-width:600px;margin:15px auto 0}.progresshead{display:flex;justify-content:space-between;gap:8px;color:var(--gold2);align-items:center}.bar{height:16px;background:#264c3a;border-radius:20px;overflow:hidden;margin:8px 0}.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#c89c39,#f4df8f);transition:width .4s}.stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:15px}.stat{background:#09271b;border:1px solid #b49a4c;border-radius:18px;padding:8px 15px;color:#f8e7a7}
+.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.choice{background:#091a13;border:2px solid #263e31;color:#fff;border-radius:22px;padding:16px 8px;min-height:112px}.choice .icon{display:block;font-size:34px}.choice.active{border-color:var(--gold);background:#342a18;box-shadow:0 0 0 3px #b9963b33}.formsection{margin-top:20px}.primary{background:linear-gradient(120deg,#f5df98,#caa346);color:#352707;font-weight:bold;border:0;border-radius:18px;padding:14px 18px;width:100%;margin-top:14px}.secondary{border:1px solid var(--gold);color:var(--gold2);background:#10291e;border-radius:14px;padding:10px 14px}.notice{color:var(--muted);font-size:13px}.status{color:var(--gold2);min-height:25px}.survey-question{padding:16px 0;border-bottom:1px solid #294436}.survey-question:last-child{border-bottom:0}.survey-question strong{display:block;margin-bottom:10px}.option{display:block;border:1px solid #2b4637;border-radius:15px;padding:12px;margin:8px 0;background:#091a13;cursor:pointer}.option:has(input:checked){border-color:var(--gold);background:#342a18}.option input{accent-color:#d8b251;margin-left:8px}.emojirow{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.emojirow label{cursor:pointer;border:2px solid #294638;border-radius:50%;width:66px;height:66px;display:grid;place-items:center;font-size:29px}.emojirow input{display:none}.emojirow label:has(input:checked){border-color:var(--gold);background:#352a17}.wallfilters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.wallfilters button{border:1px solid #2d4938;background:#091a13;color:white;border-radius:25px;padding:9px 17px}.wallfilters button.active{background:#087345}.wall{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.wallchip{border:1px solid var(--gold);border-radius:30px;padding:8px 16px;color:#f4d986;background:#2d2516;cursor:pointer}.wallchip:hover{background:#49391a}.pride-card{border:1px solid #b99b4c;border-radius:22px;padding:25px 15px;text-align:center;margin:12px 0;background:radial-gradient(ellipse at center,#0d6945,#073521)}.pride-card .star{font-size:38px}.pride-card button{background:linear-gradient(120deg,#f5df98,#caa346);border:0;border-radius:12px;padding:10px 18px;font-weight:bold;color:#342607}.prayer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px;background:linear-gradient(100deg,#17452f,#0b2c1d);border-radius:20px;margin:18px 0;cursor:pointer}.prayer strong{color:var(--gold2)}footer{text-align:center;color:#8fa99a;font-size:12px;padding:25px}
+
+.photo-banner{position:relative;min-height:210px;border-radius:24px;overflow:hidden;margin:18px 0;border:1px solid #b99b4c;background:#0b2b1d}
+.photo-banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo-banner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#042619dd,#06392377 55%,#041b13aa)}
+.photo-banner .photo-copy{position:relative;z-index:1;padding:26px 22px;min-height:210px;display:flex;flex-direction:column;justify-content:center;max-width:600px}
+.photo-banner h2{color:#f0d37d;font-size:clamp(25px,5vw,38px);margin:0 0 5px}
+.photo-banner p{color:#fff8df;margin:0}
+.image-card{border-radius:22px;overflow:hidden;border:1px solid #b99b4c;background:#0b2117;margin:14px 0}
+.image-card img{display:block;width:100%;height:190px;object-fit:cover}
+.image-card .caption{padding:13px 16px;color:#f5df9c;font-weight:bold}
+.hero{background-image:linear-gradient(#063e2d9c,#063e2dba),url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1600&q=85');background-size:cover;background-position:center}
+
+
+.splash{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 20px;background:radial-gradient(ellipse at 50% 43%,#0b7048 0,#06442e 44%,#03291c 100%);overflow:hidden;transition:opacity .65s ease,visibility .65s ease}
+.splash:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 50% 45%,#e7c86a33,transparent 34%),radial-gradient(circle at 15% 20%,#d8c16b99 0 1px,transparent 3px),radial-gradient(circle at 80% 25%,#d8c16b99 0 1px,transparent 3px),radial-gradient(circle at 20% 70%,#d8c16b99 0 1px,transparent 3px),radial-gradient(circle at 75% 78%,#d8c16b99 0 1px,transparent 3px);background-size:auto,130px 160px,170px 190px,180px 150px,160px 170px;animation:glow 5s ease-in-out infinite alternate}
+.splash.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.splash-school{position:relative;z-index:1;font-size:clamp(16px,4vw,23px);font-weight:bold;margin-bottom:28px;color:#f7f2dc}
+.splash-shield{position:relative;z-index:1;width:min(68vw,360px);aspect-ratio:0.78;display:flex;align-items:center;justify-content:center;clip-path:polygon(50% 0,96% 16%,94% 66%,78% 85%,50% 100%,22% 85%,6% 66%,4% 16%);background:linear-gradient(135deg,#fff0a6,#bd9135,#f5dd89);padding:9px;filter:drop-shadow(0 0 24px #e8c86a88);margin-bottom:22px}
+.splash-shield-inner{width:100%;height:100%;clip-path:polygon(50% 0,96% 16%,94% 66%,78% 85%,50% 100%,22% 85%,6% 66%,4% 16%);background-color:#06412d;background-image:radial-gradient(#e7c86a 1.5px,transparent 1.5px);background-size:22px 22px;display:flex;align-items:center;justify-content:center}
+.fingerprint-large{font-size:clamp(78px,18vw,125px);color:#f5df98;text-shadow:0 0 18px #f4df9c66;filter:drop-shadow(0 0 10px #e5c36b88)}
+.splash h1{position:relative;z-index:1;color:#f3d986;font-size:clamp(40px,9vw,65px);margin:0;line-height:1.3;text-shadow:0 3px 20px #0008}
+.splash-sub{position:relative;z-index:1;color:#fff0c8;font-size:clamp(19px,4vw,27px);margin:8px 0 24px}
+.splash-cta{position:relative;z-index:1;border:1px solid #d8bd70;background:#ffffff18;color:#fff4d7;border-radius:30px;padding:12px 30px;font-size:19px}
+.splash-skip{position:absolute;bottom:7%;left:5%;z-index:2;background:#ffffff1a;color:#e8eadf;border:1px solid #ffffff45;border-radius:28px;padding:9px 20px}
+@keyframes glow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.04)}}
+
+@media(min-width:700px){.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.actions{grid-template-columns:repeat(4,1fr)}.choice{min-height:135px}}
+
+/* تحسينات درع الوطن */
+.gold-stars{position:fixed;inset:0;z-index:4;pointer-events:none;overflow:hidden}
+.gold-star{position:absolute;color:#f6d978;text-shadow:0 0 7px #ffe7a0,0 0 18px #e7bd4e;animation:starFloat var(--duration,8s) ease-in-out infinite alternate;opacity:0}
+@keyframes starFloat{0%{transform:translate3d(0,25px,0) rotate(0) scale(.55);opacity:.18}50%{opacity:.9}100%{transform:translate3d(18px,-35px,0) rotate(35deg) scale(1.15);opacity:.35}}
+.splash{cursor:default}
+.splash-shield{cursor:pointer;transition:transform .25s ease}
+.splash-shield:active{transform:scale(.97)}
+.fingerprint-large{display:flex;align-items:center;justify-content:center;width:125px;height:125px;border-radius:50%;background:radial-gradient(circle,#0c7650,#063a29 72%);border:3px solid #b6f4d6;color:#b6f4d6;font-size:76px;box-shadow:0 0 0 8px #c8f5d522,0 0 28px #c9f4d788}
+.teacher-name{position:relative;z-index:1;color:#f8e8ac;font-weight:bold;font-size:19px;margin-top:10px;text-shadow:0 0 12px #d6b45277}
+.leader-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:620px;margin:22px auto 0}
+.leader-card{text-align:center;color:#f4e8bf;font-size:14px}
+.leader-card img{width:clamp(112px,32vw,180px);height:clamp(112px,32vw,180px);object-fit:cover;object-position:center top;border-radius:50%;border:6px solid #e5c36b;box-shadow:0 0 20px #e5c36b55;background:#09271b}
+.leader-card strong{display:block;color:#f8e8ac;font-size:15px;margin-top:10px}
+.leader-card p{margin:4px 0}
+@media(max-width:380px){.leader-grid{gap:8px}.leader-card{font-size:12px}.leader-card img{border-width:4px}}
+@media(prefers-reduced-motion:reduce){.gold-star,.splash:before{animation:none!important}}
+
+</style>
+</head>
+<body>
+<audio id="nationalAnthem" preload="auto" src="https://www.navyband.navy.mil/music/anthems/saudi-arabia.mp3"></audio>
+<div class="gold-stars" aria-hidden="true"></div>
+
+<div class="splash" id="splashIntro">
+  <div class="splash-school">بصمتك للوطن</div>
+  <div class="splash-shield" id="tapShield" role="button" tabindex="0" aria-label="اضغطي على البصمة لبدء النشيد"><div class="splash-shield-inner"><div class="fingerprint-large">✓</div></div></div>
+  <h1>درع الوطن</h1>
+  <div class="splash-sub">رسائل وطن لدرعه الحصين</div><div class="teacher-name">أ. مها الزهراني</div>
+  <button class="splash-cta" id="enterSite">👆 اضغط على البصمة</button>
+  <button class="splash-skip" id="skipIntro">تخطي</button>
+</div>
+
+<nav class="topbar">
+<a href="#shield">🛡️ الدرع</a><a href="#share">صفحة المشاركين</a><a href="#survey">الاستبانة</a><a href="#wall">حائط الدرع</a><a href="#pride">فخرنا</a><button class="goldbtn" onclick="document.querySelector('#share').scrollIntoView()">ابدئي المشاركة</button>
+</nav>
+<header class="hero">
+<div class="crest">🛡️</div><div class="eyebrow">مبادرة وطنية مدرسية</div><h1>درع الوطن</h1><div class="subtitle">رسائل وطن لدرعه الحصين</div>
+<div class="leader-grid">
+  <div class="leader-card">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/الصورة الرسمية لخادم الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود.jpg?width=500" alt="الصورة الرسمية للملك سلمان بن عبدالعزيز" loading="lazy">
+    <strong>خادم الحرمين الشريفين</strong><p>الملك سلمان بن عبدالعزيز آل سعود</p>
+  </div>
+  <div class="leader-card">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/الصورة الرسمية للأمير محمد بن سلمان بن عبدالعزيز آل سعود (مقصوصة).jpg?width=500" alt="الصورة الرسمية للأمير محمد بن سلمان" loading="lazy">
+    <strong>صاحب السمو الملكي</strong><p>الأمير محمد بن سلمان بن عبدالعزيز آل سعود</p><p>ولي العهد رئيس مجلس الوزراء</p>
+  </div>
+</div>
+<p class="leaders"><strong style="color:var(--gold)">حفظ الله قيادتنا وجنودنا البواسل</strong><br><span class="muted">المدرسة: الفسح للطفولة المبكرة</span><br><span class="muted">كل مشاركة تضيف قطعة مضيئة إلى الدرع؛ حتى يكتمل درعنا.</span></p>
+</header>
+<section class="container" style="padding-bottom:0">
+  <div class="photo-banner">
+    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1600&q=85" alt="مشهد لمدينة عند الغروب" loading="lazy">
+    <div class="photo-copy"><div style="font-size:34px">🇸🇦 🛡️</div><h2>درع الوطن</h2><p>بصمتك رسالة وفاء، ودعاؤك حصنٌ لجنودنا.</p></div>
+  </div>
+</section>
+<main class="container">
+<section class="panel namebox">
+<label for="participantName">اسمك</label><input id="participantName" maxlength="45" placeholder="اكتبي اسمك هنا">
+<div class="notice">يحفظ الاسم في هذا المتصفح فقط في هذه النسخة التجريبية.</div>
+</section>
+<section id="shield" class="panel shield-panel">
+<div class="shield"><div class="shield-inner"><div style="font-size:42px">🛡️</div><div class="shield-caption">درعنا</div><div class="hexes" id="hexes"></div></div></div>
+<div class="shield-caption">👆 المس قطعة مضيئة واقرأ رسالتها</div><p class="muted">كل مشاركة تضيف قطعة في الدرع. لما يكتمل نحتفل كلنا.</p>
+<div class="progressbox"><div class="progresshead"><span id="shieldNumber">الدرع رقم ١</span><strong id="countLabel">٠ / ٦٤</strong></div><div class="bar"><span id="progress"></span></div><div class="muted" id="remaining">بانتظار المشاركات المعتمدة</div></div>
+</section>
+<section class="prayer" id="prayerBtn" role="button" tabindex="0"><div><strong>🤲 دعاء لحماة الوطن</strong><br>اضغطي وادعي: اللهم احفظ جنودنا<br><span id="prayerCount" class="muted">٠ دعوة لجنودنا على العهد</span></div><div style="font-size:42px">🤲</div></section>
+<section class="image-card">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1400&q=85" alt="طالبات يتعلمن داخل فصل دراسي" loading="lazy">
+<div class="caption">من مدرستنا تبدأ بصمة الانتماء 🇸🇦</div>
+</section>
+<section id="share" class="panel">
+<h2>✍️ شارك في الدرع</h2><p class="muted">اكتبي رسالة، أو اختاري بطاقة جاهزة، أو سجّلي صوتك. وتاخذين وسام «حارسة الدرع» برقمك.</p>
+<div class="actions">
+<button class="choice active" data-mode="message"><span class="icon">📗</span><strong>رسالة</strong></button>
+<button class="choice" data-mode="card"><span class="icon">🛡️</span><strong>بطاقة جاهزة</strong></button>
+<button class="choice" data-mode="voice"><span class="icon">🎙️</span><strong>صوت</strong></button>
+<button class="choice" data-mode="drawing"><span class="icon">🎨</span><strong>رسمة</strong></button>
+</div>
+<div class="formsection field">
+<label for="audience">إلى</label><select id="audience"><option>المرابطون على الحد (عام)</option><option>جنودنا البواسل</option><option>رجال الأمن</option><option>أبطال الدفاع المدني</option><option>كل من يحمي الوطن</option></select>
+<div id="modeMessage"><label for="messageText">اكتبي رسالتك</label><textarea id="messageText" maxlength="500" placeholder="مثال: شكرًا لكم يا أبطال، أنتم سبب أماننا..."></textarea></div>
+<div id="modeCard" hidden><label for="preset">اختاري بطاقة جاهزة</label><select id="preset"><option>اللهم احفظ جنودنا وأعدهم سالمين</option><option>شكرًا لكم يا أبطال، أنتم مصدر فخرنا</option><option>بكم بعد الله ننعم بالأمن والأمان</option><option>قلوبنا ودعواتنا معكم دائمًا</option></select></div>
+<div id="modeVoice" hidden><label>تسجيل صوتي</label><button class="secondary" id="recordBtn" type="button">🎙️ بدء التسجيل</button><audio id="audioPreview" controls hidden></audio><div class="notice">قد لا يدعم المتصفح التسجيل. في هذه النسخة التجريبية لا تُرفع الملفات إلى خادم.</div></div>
+<div id="modeDrawing" hidden><label>ارسمي بصمتك</label><canvas id="drawCanvas" width="600" height="260" style="width:100%;background:#fff8e8;border-radius:14px;touch-action:none"></canvas><button class="secondary" id="clearCanvas" type="button">مسح الرسمة</button><div class="notice">ارسمي بإصبعك داخل المساحة.</div></div>
+<button class="primary" id="submitMessage">إرسال الرسالة وإضاءة قطعة في الدرع 🛡️</button><div class="status" id="submitStatus" role="status"></div>
+<p class="notice">في الموقع المنشور، تمر المشاركة على مراجعة الإدارة قبل ظهورها للعامة. هذه نسخة محلية للتجربة وليست مرتبطة بقاعدة بيانات.</p>
+</section>
+<section id="survey" class="panel">
+<h2>📝 استبانة بعدية: ماذا تعلمت؟</h2><p class="muted">من النظام الأساسي للحكم: الدفاع عن العقيدة الإسلامية والمجتمع والوطن واجب على كل مواطن. أجيبي عن الأسئلة القصيرة وقيمي المبادرة.</p>
+<form id="surveyForm">
+<div class="survey-question"><strong>١. تنص المادة (٣٤) من النظام الأساسي للحكم على أن:</strong>
+<label class="option"><input type="radio" name="q1" value="a" required> حرية اختيار التخصص حق لكل طالب</label><label class="option"><input type="radio" name="q1" value="b"> الدفاع عن العقيدة الإسلامية والمجتمع والوطن واجب على كل مواطن</label><label class="option"><input type="radio" name="q1" value="c"> المحافظة على البيئة مسؤولية الجهات الحكومية فقط</label><label class="option"><input type="radio" name="q1" value="d"> العمل التطوعي واجب على الموظفين فقط</label></div>
+<div class="survey-question"><strong>٢. الدفاع عن الوطن واجب على:</strong><label class="option"><input type="radio" name="q2" value="a" required> الجنود فقط</label><label class="option"><input type="radio" name="q2" value="b"> الكبار فقط</label><label class="option"><input type="radio" name="q2" value="c"> كل مواطن، كلٌّ بحسب دوره</label><label class="option"><input type="radio" name="q2" value="d"> جهة واحدة فقط</label></div>
+<div class="survey-question"><strong>٣. عند تداول الشائعات والأخبار غير الموثوقة عن الوطن:</strong><label class="option"><input type="radio" name="q3" value="a" required> أنشرها بسرعة</label><label class="option"><input type="radio" name="q3" value="b"> أتحقق من المصادر الرسمية قبل النشر</label><label class="option"><input type="radio" name="q3" value="c"> أرسلها دون قراءة</label></div>
+<div class="survey-question"><strong>٤. من صور المسؤولية تجاه المجتمع:</strong><label class="option"><input type="radio" name="q4" value="a" required> التعاون واحترام الأنظمة وخدمة الآخرين</label><label class="option"><input type="radio" name="q4" value="b"> الاهتمام بالمصلحة الشخصية فقط</label><label class="option"><input type="radio" name="q4" value="c"> السخرية من الآخرين</label></div>
+<div class="survey-question"><strong>٥. ما مدى رضاك عن مبادرة درع الوطن؟</strong><div class="emojirow"><label>😞<input type="radio" name="rating" value="1" required></label><label>😐<input type="radio" name="rating" value="2"></label><label>🙂<input type="radio" name="rating" value="3"></label><label>😊<input type="radio" name="rating" value="4"></label><label>🤩<input type="radio" name="rating" value="5"></label></div></div>
+<button class="primary" type="submit">إرسال الإجابات</button><div class="status" id="surveyStatus"></div>
+</form>
+</section>
+<section id="wall" class="panel"><h2>💌 حائط الدرع</h2><div class="wallfilters"><button class="active" data-filter="all">الكل</button><button data-filter="message">✍️ رسائل</button><button data-filter="drawing">🎨 رسومات</button><button data-filter="voice">🎙️ أصوات</button></div><div id="wallItems" class="wall"></div><p class="notice">تظهر المشاركات المعتمدة هنا في النسخة المنشورة.</p></section>
+<section id="pride" class="panel"><h2>⭐ فخرنا</h2><p class="muted">تكريم المشاركين في مبادرتنا. اكتبي لهم رسالة فخر.</p><div id="prideItems"><div class="pride-card"><div class="star">⭐</div><strong>أبطال الدرع</strong><p>كل رسالة صادقة تضيف نورًا إلى وطننا.</p></div></div></section>
+<section class="panel"><h2>🔐 لوحة الإدارة التجريبية</h2><p class="muted">في هذه النسخة، يمكنك مراجعة المشاركات المحلية. في الموقع العام يجب حماية هذه اللوحة بكلمة مرور وربطها بقاعدة بيانات.</p><button class="secondary" id="adminToggle">فتح لوحة المراجعة</button><div id="adminPanel" hidden><div id="pendingItems"></div><button class="secondary" id="exportData">تصدير البيانات</button><button class="secondary" id="clearData">مسح بيانات التجربة</button></div></section>
+</main>
+<section class="photo-banner">
+<img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1600&q=85" alt="أفق صحراوي وقت الغروب" loading="lazy">
+<div class="photo-copy"><h2>حفظ الله الوطن وقيادته وجنوده</h2><p>رسائل وطن لدرعه الحصين 💚</p></div>
+</section>
+<footer>درع الوطن • رسائل وطن لدرعه الحصين<br>أ. مها الزهراني • الفسح للطفولة المبكرة<br>حفظ الله الوطن وقيادته وجنوده البواسل</footer>
+<script>
+const KEY='watanShieldDemoV2';
+const $=s=>document.querySelector(s);
+let mode='message',recorder=null,chunks=[],recordedBlob=null;
+function getData(){try{return JSON.parse(localStorage.getItem(KEY))||{items:[],prayers:0,surveys:[]}}catch(e){return {items:[],prayers:0,surveys:[]}}}
+function setData(d){localStorage.setItem(KEY,JSON.stringify(d))}
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){
+ const d=getData(),approved=d.items.filter(x=>x.status==='approved'),count=approved.length;
+ $('#hexes').innerHTML=Array.from({length:64},(_,i)=>{const item=approved[i];return `<button class="hex ${item?'':'empty'}" data-item="${item?esc(item.id):''}" aria-label="${item?'قراءة رسالة':'قطعة غير مضاءة'}">${item?'✦':''}</button>`}).join('');
+ $('#countLabel').textContent=`${count} / ٦٤`;$('#progress').style.width=Math.min(100,count/64*100)+'%';$('#remaining').textContent=count>=64?'اكتمل الدرع! شكرًا لكل المشاركين 🇸🇦':`باقي ${64-count} مشاركة ويكتمل الدرع`;
+ $('#prayerCount').textContent=`${d.prayers.toLocaleString('ar-SA')} دعوة لجنودنا على العهد`;
+ $('#wallItems').innerHTML=approved.filter(x=>$('#wallItems').dataset.filter==='drawing'?x.type==='drawing':$('#wallItems').dataset.filter==='voice'?x.type==='voice':$('#wallItems').dataset.filter==='message'?x.type!=='drawing'&&x.type!=='voice':true).map(x=>`<button class="wallchip" data-item="${esc(x.id)}">❤️ ${esc(x.student||'مشارك')} ${x.type==='drawing'?'🎨':x.type==='voice'?'🎙️':'✉️'}</button>`).join('')||'<p class="muted">لا توجد مشاركات معتمدة بعد.</p>';
+ $('#pendingItems').innerHTML=d.items.filter(x=>x.status==='pending').map(x=>`<div class="panel"><strong>${esc(x.student||'دون اسم')}</strong><p>${esc(x.text||'مشاركة '+x.type)}</p><p class="notice">النوع: ${esc(x.type)} | إلى: ${esc(x.audience)}</p><button class="secondary" onclick="moderate('${x.id}',true)">موافقة ونشر</button> <button class="secondary" onclick="moderate('${x.id}',false)">رفض وحذف</button></div>`).join('')||'<p class="muted">لا توجد مشاركات بانتظار المراجعة.</p>';
+}
+function moderate(id,ok){let d=getData();d.items=d.items.map(x=>x.id===id?{...x,status:ok?'approved':'rejected'}:x).filter(x=>x.status!=='rejected');setData(d);render()}
+document.querySelectorAll('.choice').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;document.querySelectorAll('.choice').forEach(x=>x.classList.toggle('active',x===b));['Message','Card','Voice','Drawing'].forEach((n,i)=>$('#mode'+n).hidden=['message','card','voice','drawing'][i]!==mode)}));
+$('#submitMessage').addEventListener('click',()=>{
+ const student=$('#participantName').value.trim(),audience=$('#audience').value;let text='',extra={};
+ if(mode==='message')text=$('#messageText').value.trim();
+ if(mode==='card')text=$('#preset').value;
+ if(mode==='voice'){if(!recordedBlob){$('#submitStatus').textContent='ابدئي التسجيل أولًا، أو اختاري الرسالة أو البطاقة الجاهزة.';return}text='تسجيل صوتي (نسخة محلية)';extra.audioUrl=URL.createObjectURL(recordedBlob)}
+ if(mode==='drawing'){text='رسمة بصمتي للوطن';extra.drawing=$('#drawCanvas').toDataURL('image/png')}
+ if(mode==='message'&&!text){$('#submitStatus').textContent='اكتبي رسالتك قبل الإرسال.';return}
+ const d=getData();d.items.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),student,audience,type:mode,text,status:'pending',date:new Date().toISOString(),...extra});setData(d);$('#messageText').value='';$('#submitStatus').textContent='وصلت مشاركتك للمراجعة. ستظهر في الدرع بعد الموافقة عليها 💚';render();
+});
+$('#prayerBtn').onclick=()=>{const d=getData();d.prayers++;setData(d);render()};$('#prayerBtn').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#prayerBtn').click()}};
+document.querySelectorAll('.wallfilters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.wallfilters button').forEach(x=>x.classList.toggle('active',x===b));$('#wallItems').dataset.filter=b.dataset.filter;render()});
+$('#surveyForm').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);let score=0;['q1','q2','q3','q4'].forEach((q,i)=>{if(f.get(q)===['b','c','b','a'][i])score++});const d=getData();d.surveys.push({name:$('#participantName').value.trim(),score,rating:f.get('rating'),date:new Date().toISOString()});setData(d);$('#surveyStatus').textContent=`شكرًا لمشاركتك! نتيجتك ${score} من ٤. تم حفظ الرد في هذه النسخة على جهازك.`;};
+$('#adminToggle').onclick=()=>{$('#adminPanel').hidden=!$('#adminPanel').hidden;render()};
+$('#exportData').onclick=()=>{const blob=new Blob([JSON.stringify(getData(),null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='dir-alwatan-data.json';a.click();URL.revokeObjectURL(a.href)};
+$('#clearData').onclick=()=>{if(confirm('مسح جميع بيانات النسخة التجريبية من هذا الجهاز؟')){localStorage.removeItem(KEY);render()}};
+const canvas=$('#drawCanvas'),ctx=canvas.getContext('2d');ctx.strokeStyle='#0a5b3a';ctx.lineWidth=5;ctx.lineCap='round';let drawing=false;
+function pos(e){const r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height}}
+canvas.onpointerdown=e=>{drawing=true;canvas.setPointerCapture(e.pointerId);const p=pos(e);ctx.beginPath();ctx.moveTo(p.x,p.y)};canvas.onpointermove=e=>{if(!drawing)return;const p=pos(e);ctx.lineTo(p.x,p.y);ctx.stroke()};canvas.onpointerup=()=>drawing=false;canvas.onpointercancel=()=>drawing=false;$('#clearCanvas').onclick=()=>ctx.clearRect(0,0,canvas.width,canvas.height);
+$('#recordBtn').onclick=async()=>{try{if(!recorder||recorder.state==='inactive'){const stream=await navigator.mediaDevices.getUserMedia({audio:true});chunks=[];recorder=new MediaRecorder(stream);recorder.ondataavailable=e=>chunks.push(e.data);recorder.onstop=()=>{recordedBlob=new Blob(chunks,{type:'audio/webm'});$('#audioPreview').src=URL.createObjectURL(recordedBlob);$('#audioPreview').hidden=false;$('#recordBtn').textContent='إعادة التسجيل'};recorder.start();$('#recordBtn').textContent='⏹ إيقاف التسجيل'}else{recorder.stop();recorder.stream.getTracks().forEach(t=>t.stop())}}catch(e){$('#submitStatus').textContent='تعذر الوصول إلى الميكروفون. تحققي من إذن المتصفح أو اختاري الرسالة المكتوبة.'}};
+$('#hexes').onclick=e=>{const b=e.target.closest('[data-item]');if(!b||!b.dataset.item)return;const item=getData().items.find(x=>x.id===b.dataset.item);if(item)alert((item.student?item.student+' يقول:\n':'رسالة وطنية:\n')+(item.text||'مشاركة'));};
+$('#wallItems').onclick=e=>{const b=e.target.closest('[data-item]');if(!b)return;const item=getData().items.find(x=>x.id===b.dataset.item);if(item)alert((item.student||'مشارك')+' — '+(item.text||'مشاركة'));};
+render();
+
+const intro = document.getElementById('splashIntro');
+const anthem = document.getElementById('nationalAnthem');
+function startExperience(){
+  intro.classList.add('hidden');
+  if(anthem){
+    anthem.currentTime = 0;
+    anthem.play().catch(()=>{});
+  }
+}
+document.getElementById('enterSite').addEventListener('click', startExperience);
+document.getElementById('tapShield').addEventListener('click', startExperience);
+document.getElementById('tapShield').addEventListener('keydown', e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();startExperience();}});
+document.getElementById('skipIntro').addEventListener('click',()=>{intro.classList.add('hidden')});
+const starField=document.querySelector('.gold-stars');
+for(let i=0;i<24;i++){
+  const star=document.createElement('span');
+  star.className='gold-star';
+  star.textContent=i%3===0?'✧':'✦';
+  star.style.left=(Math.random()*100)+'%';
+  star.style.top=(Math.random()*100)+'%';
+  star.style.fontSize=(12+Math.random()*17)+'px';
+  star.style.setProperty('--duration',(6+Math.random()*8)+'s');
+  star.style.animationDelay=(-Math.random()*12)+'s';
+  starField.appendChild(star);
+}
+
+</script>
+</body></html>
